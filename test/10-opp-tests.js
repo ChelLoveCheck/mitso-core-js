@@ -23,7 +23,7 @@ describe('10-opp-tasks', () => {
     const lastPageItemsCount = helper.pageItemCount(pageCount - 1);
     assert.strictEqual(lastPageItemsCount, 5);
 
-    const badPageItemsCount = helper.pageItemCount(pageCount + 10)
+    const badPageItemsCount = helper.pageItemCount(pageCount + 10);
     assert.strictEqual(badPageItemsCount, -1);
 
     assert.strictEqual(helper.pageIndex(26), 1); // (zero based index)
